@@ -1,0 +1,35 @@
+1. Complete Components List
+
+Arduino Uno / Nano	
+Flex Sensors (2.2" or 4.5")	5	One for each finger
+10kΩ Resistors	5	For voltage dividers
+Servo Motors (SG90 or MG996R)	5	One per finger joint
+Jumper Wires (Male–Male)	~30	For connections
+Breadboard	1	Optional but helpful
+External 5V Power Supply	1	For servo motors (2A min recommended)
+Glove	1	To mount flex sensors on hand
+Heat-shrink tubing / tape	Optional	For mounting sensors
+Arduino USB Cable	1	To upload code and power Arduino
+
+Stepwise process-
+
+1.	 Attach each flex sensor onto a glove, one per finger, using tape or tubing.
+2.	 Connect each flex sensor in a voltage divider with a 10kΩ resistor.
+3.	 Connect each flex sensor’s output to Arduino analog pins (A0 to A4).
+4.	 Connect each servo motor’s signal wire to digital pins (3 to 7).
+5.   Power the servos with an external 5V source (do NOT power them from Arduino).
+6.	 Make sure all grounds (Arduino, power supply, sensors, servos) are connected together.
+7.	 Upload the Arduino code provided below.
+8.	 Move your fingers while wearing the glove — the robotic arm will mimic your gestures.
+
+Flex Sensor Wiring (per sensor):
+• One end → 5V
+• Other end → Arduino A0-A4
+• Connect 10kΩ resistor from sensor output to GND (voltage divider)
+Servo Motor Wiring:
+• Signal wires → Digital pins 3, 4, 5, 6, 7
+• VCC → External 5V Power Supply
+• GND → Common GND with Arduino
+Important Notes:
+• Always use a separate power supply for servo motors.
+• Ensure GND of Arduino and power supply are connected.
